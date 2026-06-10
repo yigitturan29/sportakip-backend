@@ -3,10 +3,10 @@ load_dotenv()
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.database import engine, Base
-import app.db_models  # noqa: F401 — Base'e tablo tanımlarını kayıt eder
-from app.routes import exercises, workouts, nutrition, ai
-from app.routes import auth 
+from database import engine, Base
+
+from routes import exercises, workouts, nutrition, ai
+from routes import auth 
 app = FastAPI(
     title="SportakipAI API",
     description="Spor takip ve AI tabanlı antrenman öneri sistemi",

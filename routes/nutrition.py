@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
-from app.database import get_db
-from app.db_models import NutritionLog
-from app.schemas.nutrition import MealEntry
+from database import get_db
+from db_models import NutritionLog
+from schemas.nutrition import MealEntry
 
 router = APIRouter()
 

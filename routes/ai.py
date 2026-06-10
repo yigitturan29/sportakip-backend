@@ -1,9 +1,9 @@
 from fastapi import APIRouter
 from pydantic import BaseModel
 from typing import List
-from app.schemas.workout import AIWorkoutRequest, PerformanceLog
-from app.services.workout_recommendation import oneri_uret, oneri_uret_batch
-from app.services.groq_service import groq_ai_insight, groq_ai_chat
+from schemas.workout import AIWorkoutRequest, PerformanceLog
+from services.workout_recommendation import oneri_uret, oneri_uret_batch
+from services.groq_service import groq_ai_insight, groq_ai_chat
 
 router = APIRouter()
 

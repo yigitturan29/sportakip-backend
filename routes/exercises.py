@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Query
 from typing import Optional
-from app.schemas.exercise import ExerciseResponse
+from schemas.exercise import ExerciseResponse
 
 router = APIRouter()
 

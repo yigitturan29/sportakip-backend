@@ -1,11 +1,11 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 
-from app.database import get_db
-from app.db_models import WorkoutRecord, ExerciseLog, User
-from app.schemas.workout import WorkoutRecord as WorkoutSchema, PerformanceLog
-from app.services.workout_recommendation import oneri_uret
-from app.routes.auth import get_current_user
+from database import get_db
+from db_models import WorkoutRecord, ExerciseLog, User
+from schemas.workout import WorkoutRecord as WorkoutSchema, PerformanceLog
+from services.workout_recommendation import oneri_uret
+from routes.auth import get_current_user
 
 router = APIRouter()
 

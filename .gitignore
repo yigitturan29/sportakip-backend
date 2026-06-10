@@ -1,0 +1,10 @@
+# Python Sanal Ortamı
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Veritabanı ve Çevresel Değişkenler
+sportakip.db
+*.sqlite3
+.env

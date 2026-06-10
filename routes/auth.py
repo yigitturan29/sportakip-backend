@@ -8,8 +8,8 @@ from jose import JWTError, jwt
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
 
-from app.database import get_db
-from app.db_models import User
+from database import get_db
+from db_models import User
 
 SECRET_KEY     = os.getenv("SECRET_KEY", "DEGISTIR_BUNU")
 ALGORITHM      = "HS256"
